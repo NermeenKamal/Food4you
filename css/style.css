@@ -8,6 +8,8 @@ body{
 height: 4000px;
 }
 .header{
+    display: flex;
+    align-items: center;
   background-color: #182d35ed;
   width: 100%;
   position: fixed;
@@ -15,18 +17,10 @@ height: 4000px;
   z-index: 10;
 }
 .photo{
-  margin-left: 4px;
-  margin-top: -54px;
-    float: left;
     height: 184px;
-    width: 408px;
+    width: 358px;
 }
 
-.list{
-  float: right;
-  margin-top: 27px;
-margin-right: 175px;
-}
 .list li{
   margin-left: 40px;
   list-style-type: none;
@@ -277,7 +271,12 @@ a{
 
 
 .portfolio-content {
+    display: flex;
     overflow: hidden;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
 }
 .portfolio-item{
   margin-left: 30px;
@@ -401,19 +400,24 @@ a{
      color: #fff;
  }
  
- 
+ .serv{
+     width: 80%;
+     margin: auto;
+     display: flex;
+     flex-wrap: wrap;
+     align-content: space-around;
+     align-items: center;
+     flex-direction: row;
+ }
 .service {
     background-color: #1d3139;
     margin-top: 300px;
 }
 .service-item{
   margin-top: 226px;
-    width:50%;
+    width:36%;
     float:left;
 
-}
-.clear {
-    clear: both;
 }
 .service-item .section-header{
     text-align:left;
@@ -535,18 +539,24 @@ a{
     
 
 .pricing-plans{
+    display: flex;
+    align-content: stretch;
     overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .pricing-item{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     float: left;
     width:30%;
-    padding:30px 15px;
+    padding:30px 67px;
     border: 1px solid #82c002c7;
-    text-align: center;
 }
 .pricing-item-text {
     text-transform: uppercase;
-    font-size: 17px;
     color: white;
 }
 .pricing-item-permonth{
@@ -573,7 +583,6 @@ a{
   cursor: pointer;
   color: #9dcf19;
   border: 2px solid #4c6d08;
-  margin: auto;
   padding: 4px;
   background-color: #2e4e5b8a;
   display: block;
@@ -660,17 +669,25 @@ a{
 }
 
 
+.con{
+    display: block;
+    width: 80%;
+    margin: auto;
+    align-content: space-around;
+}
 
         .team-content{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-around;
             overflow: hidden;
-            padding-left: 70px;
         }
         .team-item{
             display: block;
             float: left;
-            width: 28%;
+            width: 30%;
             background-color: #4cabc81a;
-            padding: 17px 13px;
+            padding: 17px 19px;
             text-align: center;
             position: relative;
         }
@@ -754,6 +771,7 @@ a{
             background-color: #ffffff00;
         }
         .blog-item{
+            height: 520px;
             float: left;
             width: 30%;
             background-color: #223b44d1;
@@ -878,4 +896,17 @@ a{
             color:#999;
             font-size: 12px;
             text-transform: uppercase;
+        }
+
+        @media  {
+            .container{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: space-around;
+            align-items: center;
+        }
+
         }
